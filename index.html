@@ -31,7 +31,7 @@
                     </svg>
                 </button>
                 <ul class="list list-nav-mob">
-                    <li class="item-nav-mob"><a href="./index.html" class="link">Studio</a></li>
+                    <li class="item-nav-mob"><a href="./index.html" class="link active-page">Studio</a></li>
                     <li class="item-nav-mob"><a href="./portfolio.html" class="link">Portfolio</a></li>
                     <li class="item-nav-mob"><a href="" class="link">Contacts</a></li>
                 </ul>
@@ -39,11 +39,11 @@
             <div>
                 <address class="address">
                     <ul class="list list-address">
-                        <li><a href="tel:+110001111111" class="link address item-address-mob">+11 (000) 111-11-11</a></li>
-                        <li><a href="mailto:info@devstudio.com" class="link address item-mail-mob">info@devstudio.com</a></li>
+                        <li class="item-address-mob"><a href="tel:+110001111111" class="link address link-address-mob">+11 (000) 111-11-11</a></li>
+                        <li class="item-mail-mob"><a href="mailto:info@devstudio.com" class="link address link-mail-mob">info@devstudio.com</a></li>
                     </ul>
                 </address>
-                <ul class="list list-team-soc mob-menu-soc">
+                <ul class="list list-mob-soc ">
                     <li class="item-team-soc">
                         <a href="" class="link-team-soc">
                             <svg width="20" height="20" class="icon-team-soc">
@@ -75,9 +75,6 @@
                 </ul>
             </div>
 
-
-
-
         </div>
        <div class="container header-nav">
         <nav class="nav">
@@ -90,8 +87,8 @@
         </nav>   
         <address class="address">
             <ul class="list list-address">
-                <li><a href="mailto:info@devstudio.com" class="link address">info@devstudio.com</a></li>
-                <li><a href="tel:+110001111111" class="link address">+11 (000) 111-11-11</a></li>
+                <li class="item-address-mob"><a href="mailto:info@devstudio.com" class="link address">info@devstudio.com</a></li>
+                <li class="item-mail-mob"><a href="tel:+110001111111" class="link address">+11 (000) 111-11-11</a></li>
             </ul>       
          </address>
         </div>
@@ -203,7 +200,13 @@
         <div class="container">
             <h2 class="title-team">Our Team</h2>
             <ul class="list list-team">
-            <li class="item-team"><img src="./images/img.jpg" alt="фото" width="264">
+            <li class="item-team">
+                <img src="./images/imgm.jpg"
+                     alt="фото" 
+                     srcset="./images/imgm.jpg     1x,
+                             ./images/imgm(2).jpg  2x
+                        "                        
+                        width="264">
                 <div class="list-team-text">
                     <h3 class="title-members">Mark Guerrero</h3>
                     <p class="item-profession">Product Designer</p>
@@ -239,7 +242,14 @@
                     </ul>
                 </div>
             </li>
-            <li class="item-team"><img src="./images/img(1).jpg" alt="фото" width="264">
+            <li class="item-team">
+                <img src="./images/imgt.jpg" 
+                     alt="фото" 
+                     srcset="./images/imgt.jpg     1x,
+                             ./images/imgt(2).jpg  2x
+
+                        " 
+                        width="264">
                 <div class="list-team-text">
                     <h3 class="title-members">Tom Ford</h3>
                     <p class="item-profession">Frontend Developer</p>
@@ -276,7 +286,13 @@
                 
                 </div>
             </li>
-            <li class="item-team"><img src="./images/img(2).jpg" alt="фото" width="264">
+            <li class="item-team">
+                <img src="./images/imgc.jpg"
+                     alt="фото" 
+                     srcset="./images/imgc.jpg     1x,
+                             ./images/imgc(2).jpg  2x
+                
+                            " width="264">
                 <div class="list-team-text">
                     <h3 class="title-members">Camila Garcia</h3>
                     <P class="item-profession">Marketing</P>
@@ -313,7 +329,13 @@
                 </div>
             
             </li>
-            <li class="item-team"><img src="./images/img(3).jpg" alt="фото" width="264">
+            <li class="item-team">
+                <img src="./images/imgd.jpg" 
+                     alt="фото" 
+                     srcset="./images/imgd.jpg     1x,
+                             ./images/imgd(2).jpg  2x
+                
+                            " width="264">
                 <div class="list-team-text">
                     <h3 class="title-members">Daniel Wilson</h3>
                     <p class="item-profession">UI Designer</p>

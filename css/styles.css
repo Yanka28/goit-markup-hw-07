@@ -142,7 +142,9 @@ nav .list-nav{
     justify-content: space-between;
     overflow: auto;
 }
-
+.active-page{
+    color: var(--iris);
+}
 
 .footer-text p{
     text-align: center;
@@ -169,7 +171,8 @@ nav .list-nav{
 .address:hover,
 .address:focus {
     color: var(--ocean);
- }
+}
+
  .section-hero{
     background-color: var(--navy-blue);
     max-width: 1440px;
@@ -244,9 +247,14 @@ img {
     margin-bottom: 72px;
 }
 .list-portfolio-card{
+    display: flex;
     flex-wrap: wrap;
     row-gap: 48px;
-}
+    list-style: none;
+    font-weight: 500;
+    column-gap: 24px;
+    }
+
 .list-portfolio-text{
     padding: 32px 0 32px 16px;
     border: 1px solid var(--cornflower);
@@ -295,8 +303,6 @@ img {
 }
 
 
-.title-feature,
-
 .title-products{
     font-weight: 700;
     font-size: 36px;
@@ -331,7 +337,7 @@ img {
 .item-feature:not(:last-child) {
     margin-bottom: 72px;
 }
-
+.title-feature,
 .title-work,
 .title-team,
 .title-customers{
@@ -344,6 +350,12 @@ img {
     color: var(--navy-blue);
     margin-bottom: 72px;
    
+}
+.title-feature{
+    margin-bottom: 8px;
+}
+.text-feature{
+    font-weight: 500;
 }
 
 .list {
@@ -363,17 +375,22 @@ img {
 }
 
 .item-address-mob{
+    
+    margin-bottom: 40px;
+}
+.link-address-mob{
     font-weight: 700;
     font-size: 26px;
     line-height: 1.11;
-    color:var(--iris);
+    color: var(--iris);
     text-transform: capitalize;
-    margin-bottom: 40px;
 }
 .item-mail-mob{
+    margin-bottom: 48px;
+}
+.link-mail-mob{
     font-size: 20px;
     line-height: 1.2;
-    margin-bottom: 48px;
 }
 
 
@@ -400,6 +417,12 @@ img {
     justify-content: center;
     column-gap: 24px;
     margin-top: 8px;
+}
+.list-mob-soc{
+    display: flex;
+    justify-content: left;
+    column-gap: 24px;
+    
 }
  .item-team{
     background: #FFFFFF;
@@ -579,6 +602,9 @@ img {
     width: 100%;
     margin: 0 auto;
 }
+.footer-tab{
+    margin-bottom: 72px;
+}
 
 .studio-footer {
     color: var(--cloud);
@@ -607,7 +633,7 @@ img {
 }
 
 .social-media{
-    margin: 72px auto;
+    margin-top: 72px;
 }
 .subscribe-form{
     width: 100%;
@@ -893,7 +919,7 @@ img {
         gap: 56px;
 
    }
-   .item-address-mob {
+   .link-address-mob {
        font-size: 36px;
        
    }
@@ -1087,7 +1113,7 @@ img {
 
 
 
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 1158px){
         .container {
             width: 1168px;
             }
@@ -1190,6 +1216,7 @@ nav .list-nav {
             gap: 80px;
         }
         .footer-tab{
+            margin-bottom:0;
             gap: 120px;
         }
 }

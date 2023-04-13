@@ -2,16 +2,12 @@
 
 @media screen and (min-width: 428px) {
     .container {
-        width: 396px;
+        width: 428px;
     }
 
-    .mob-menu-soc {
-        justify-content: left;
-        gap: 56px;
+    
 
-    }
-
-    .item-address-mob {
+    .link-address-mob {
         font-size: 36px;
 
     }
@@ -27,12 +23,10 @@
     }
 
     .section-team>.container {
-        width: 428px;
-        padding-left: 82px;
-        padding-right: 82px;
-
+        width: 296px;
+        
     }
-
+    
     .section-customers>.container {
         padding-left: 0;
         padding-right: 0;
@@ -62,7 +56,7 @@
 
 @media screen and (min-width: 768px) {
     .container {
-        width: 736px;
+        width: 768px;
 
     }
 
@@ -82,8 +76,9 @@
     .header-nav {
         display: flex;
         justify-content: space-between;
-        padding-top: 24px;
-        padding-bottom: 24px;
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 
     nav .list-nav {
@@ -94,10 +89,14 @@
         display: block;
 
     }
-
-    .link.address {
-        margin-bottom: 8px;
+    .item-address-mob {
+        margin-bottom: 12px;
     }
+
+    .item-mail-mob {
+        margin-bottom: 0;
+    }
+    
 
     .list-nav .link,
     .list-address .link {
@@ -140,15 +139,17 @@
 
 
     }
+    .list-nav{
+        gap: 40px;
+    }
+        
 
     .item-team:not(:last-child) {
         margin-bottom: 0;
 
     }
 
-    .section-feature>.container {
-        padding: 0;
-    }
+    
 
     .item-feature {
         display: flex;
@@ -165,16 +166,18 @@
     }
 
     .section-team>.container {
-        width: 768px;
-        padding-left: 108px;
-        padding-right: 108px;
+        width: 552px;
+        padding-right: 0;
+        padding-left: 0;
+
+        
 
     }
 
     .section-customers>.container {
-        width: 768px;
-        padding-left: 108px;
-        padding-right: 108px;
+        width: 552px;
+        padding-right: 0;
+        padding-left: 0;
     }
 
     .item-customers {
@@ -182,16 +185,18 @@
     }
 
     .footer>.container {
-        width: 768px;
-        padding-left: 108px;
-        padding-right: 108px
+        width: 552px;
+        padding-right: 0;
+        padding-left: 0;
+        
+        
     }
 
     .footer-tab {
         display: flex;
         gap: 24px;
         align-items: flex-start;
-        margin-bottom: 72px;
+        
     }
 
     .footer-text {
@@ -240,15 +245,23 @@
 
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
     .container {
-        width: 1168px;
+        width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+
     }
 
     .section {
         padding-top: 120px;
         padding-bottom: 120px;
     }
+        .header-nav {
+            
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
 
     nav .list-nav {
         margin-left: 76px;
@@ -258,10 +271,14 @@
         display: flex;
 
     }
-
-    .link.address {
-        margin-bottom: 8px;
+    .item-address-mob{
+        margin-bottom: 0;
     }
+    .item-mail-mob{
+        margin-bottom: 0;
+    }
+
+    
 
     .list-nav .link,
     .list-address .link {
@@ -292,10 +309,12 @@
         margin-bottom: 48px;
     }
 
-    .section-feature {
-        padding-top: 120px;
-        padding-bottom: 120px;
+    .section-feature >.container{
+      padding-left: 15px;
+      padding-right: 15px;
+        
     }
+
 
     .list {
         flex-wrap: nowrap;
@@ -315,6 +334,9 @@
         font-size: 20px;
         line-height: 1.2em;
     }
+    .text-feature{
+        font-weight:400;
+    }
 
     .section-work {
         display: block;
@@ -331,9 +353,7 @@
 
     .section-team>.container {
         width: 1158px;
-        padding-left: 15px;
-        padding-right: 15px;
-
+        padding: 0 15px;
     }
 
     .section-customers>.container {
@@ -355,6 +375,27 @@
     }
 
     .footer-tab {
+        margin-bottom: 0;
         gap: 120px;
     }
+}
+
+
+.list-portfolio-card {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    list-style: none;
+    font-weight: 500;
+    column-gap: 24px;
+}
+.title-products{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2em;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+    margin-bottom: 8px;
+    text-align: left;
+    
 }
