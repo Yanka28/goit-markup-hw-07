@@ -102,7 +102,10 @@
     .list-address .link {
         display: block;
     }
-
+         .address:hover,
+         .address:focus {
+             color: var(--ocean);
+         }
     .list-address .link {
         font-size: 12px;
         line-height: 1.17;
@@ -257,11 +260,11 @@
         padding-top: 120px;
         padding-bottom: 120px;
     }
-        .header-nav {
-            
+
+    .header-nav {
             padding-top: 24px;
             padding-bottom: 24px;
-        }
+    }
 
     nav .list-nav {
         margin-left: 76px;
@@ -273,6 +276,7 @@
     }
     .item-address-mob{
         margin-bottom: 0;
+        
     }
     .item-mail-mob{
         margin-bottom: 0;
@@ -314,11 +318,14 @@
       padding-right: 15px;
         
     }
-
+ .list-address {
+     gap: 40px;
+ }
 
     .list {
         flex-wrap: nowrap;
     }
+   
 
     .item-feature {
         flex-wrap: wrap;
